@@ -133,7 +133,7 @@ params:
     enable: true
     title: "Andrew Sasamori"
     subtitle: "Engineering Student"
-    content: "Please scroll down to read more about me :) These days, I am taking less classes and self-learning about statistical modeling, machine learning, firmware engineering, and full-stack technologies on my own."
+    content: "Please scroll down to read more about me :) These days, I am taking less classes and instead doing self-guided learning about statistical modeling, machine learning, firmware engineering, and full-stack technologies on my own."
     image: "/images/baked.jpg"
     bottomImage:
       enable: true
@@ -385,8 +385,8 @@ params:
     read: "Read"
     toc: "Table Of Contents"
     # copyright: "All rights reserved"
-    # TODO: Change the version so not part of copyright; find year
-    copyright: "Version 1.0"
+    # TODO: Change the version so not part of copyright; find year; find way to get rid of made with love...
+    copyright: "Version 1.1"
     pageNotFound: "Page not found"
     emailText: "Check out this site"
 
