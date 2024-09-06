@@ -134,7 +134,7 @@ params:
     title: "Andrew Sasamori"
     subtitle: "Engineering Student"
     content: "Please scroll down to read more about me :) These days, I am taking less classes and instead doing self-guided learning about statistical modeling, machine learning, firmware engineering, and full-stack technologies on my own."
-    image: "/images/baked.jpg"
+    image: "/images/stairway.jpg"
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -386,7 +386,7 @@ params:
     toc: "Table Of Contents"
     # copyright: "All rights reserved"
     # TODO: Change the version so not part of copyright; find year; find way to get rid of made with love...
-    copyright: "Version 1.1"
+    copyright: "Version 1.2"
     pageNotFound: "Page not found"
     emailText: "Check out this site"
 
