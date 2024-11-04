@@ -23,19 +23,12 @@ markup:
       unsafe: true
 
 # Menus:
-
-#   TODO: Create blog/gallery?
-#   main:
-#     - identifier: blog
-#       name: Blog
-#       title: Blog posts
-#       url: /blogs
-#       weight: 1
-#     - identifier: gallery
+#     main:
+#     - identifier: Gallery
 #       name: Gallery
-#       title: Blog posts
+#       title: Gallery  # Changed from "Blog posts" to "Gallery"
 #       url: /gallery
-#       weight: 2
+#       weight: 1
 
 #Dropdown menu
 # - identifier: dropdown
@@ -59,7 +52,7 @@ params:
   title: "Hugo Profile"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/images/sabo_flag.png"
+  favicon: "/images/sunglasses.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -112,11 +105,11 @@ params:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
     # showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "My Personal Website" # Brand name for the brand | default is the title variable
-    disableSearch: false
+    brandName: "Andrew Sasamori" # Brand name for the brand | default is the title variable
+    disableSearch: true
     # searchPlaceholder: "Search"
     stickyNavBar:
-      enable: true
+      enable: false
       showOnScrollUp: true
     enableSeparator: false
     menus:
@@ -127,21 +120,30 @@ params:
       # TODO: Add achievements
       disableAchievements: true
       disableContact: false
+      # disableGallery: false # This probably doens't do anything
 
   # Hero
   hero:
     enable: true
     title: "Andrew Sasamori"
-    subtitle: "Engineering Student"
-    content: "Please scroll down to read more about me :) These days, I am taking less classes and instead doing self-guided learning about statistical modeling, machine learning, firmware engineering, and full-stack technologies on my own."
-    image: "/images/stairway.jpg"
+    subtitle: "Software Developer and Machine Learning Researcher"
+    content: >- 
+      Happy that you are here!
+      
+      
+      Currently looking for Winter/Spring 2025 internships and/or New Grad roles for 2025
+
+
+      ... but also applying for a PhD at the same time.
+
+    image: "/images/fun.jpeg"
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
       name: "Resume"
-      url: "/andrew_sasamori_resume.pdf"
+      url: "/Resume.pdf"
       image:
       download: true
       newPage: false
@@ -158,19 +160,26 @@ params:
     enable: true
     title: "About Me"
     image: "/images/cold_yosemite.jpg"
-    content: |-
-      Hi there! I am Andrew Sasamori, and I'm originally from <a href="https://en.wikipedia.org/wiki/Mountain_View,_California" target="_blank" rel="noopener noreferrer">Mountain View</a> (Bay Area), California. As of Fall 2024, I am a 4th year Computer Engineering student concentrating in Machine Learning at Boston University, where I am a Undergraduate Research Assistant at the Tianyu Wang Research Lab.
+    content: >-
 
-      In May 2022, I transferred from University of Hawaii at Manoa to my current institution of Boston University. I have since ommitted this information from my resume because a surprising amount of employers had thought I graduated with a BS in Biological Engineering in 1 calendar year.
-    # content: |-
-    #   Hi there! I am Andrew Sasamori, and I'm originally from <a href="https://en.wikipedia.org/wiki/Mountain_View,_California" target="_blank" rel="noopener noreferrer">Mountain View</a> (Bay Area), California. As of Fall 2024, I am a 4th year Computer Engineering student concentrating in Machine Learning at Boston University, where I am a Undergraduate Research Assistant at the Tianyu Wang Research Lab.
+      Hi there! I am Andrew Sasamori, and I'm originally from <a href="https://en.wikipedia.org/wiki/Mountain_View,_California" 
+      target="_blank" rel="noopener noreferrer">Mountain View</a> (Bay Area), California. For the 2024-2025 school year, 
+      I am a 4th year <a href="https://www.bu.edu/academics/eng/programs/computer-engineering/bs/" target="_blank" 
+      rel="noopener noreferrer">Computer Engineering</a> student concentrating in <a href="https://www.bu.edu/eng/academics/explore-degree-programs/concentration-in-machine-learning/" 
+      target="_blank" rel="noopener noreferrer">Machine Learning</a> at <a href="https://www.bu.edu/" 
+      target="_blank" rel="noopener noreferrer">Boston University</a>, 
+      where I am a Undergraduate Research Assistant at the <a href="https://tyw-lab.github.io/" 
+      target="_blank" rel="noopener noreferrer">Tianyu Wang Research Lab</a>.
 
-    #   In May 2022, I transferred from University of Hawaii at Manoa to my current institution of Boston University. I have since ommitted this information from my resume because a surprising amount of employers had thought I graduated with a BS in Biological Engineering in 1 calendar year.
 
-    #   In the past, I have been known to force myself into creativity, for the sole purpose of impressing employers, students, professors, and anyone else to flaunt my skills uselessly. Now, as I've grown more aware of what I want to do for a future/professional life, I've finally decided to create this personal website in the least creative way possible: <a href="https://hugo-profile.netlify.app/" target="_blank" rel="noopener noreferrer">Example Portfolio</a>. I plan to update this website with blogs/random thoughts of mine relating to technical concepts.
+      In May 2022, I transferred from <a href="https://manoa.hawaii.edu/" 
+      target="_blank" rel="noopener noreferrer">University of Hawaii at Manoa</a> (as a <a href="https://cms.ctahr.hawaii.edu/majors/be" 
+      target="_blank" rel="noopener noreferrer">Biological Engineering</a> student) to my current institution of Boston University. 
+      I have since ommitted this information from my resume because a surprising amount of employers had thought I had completed the major
+      within 1 school year.
     skills:
       enable: true
-      title: "Technologies I have actually been working with recently:"
+      title: "Recent technologies:"
       items:
         - "Python"
         - "JavaScript/HTML"
@@ -181,8 +190,28 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - job: "Undergraduate Research Assistant"
+        company: "Tianyu Wang Lab"
+        companyUrl: "https://tyw-lab.github.io/"
+        date: "Jan 2024 - Present"
+        info:
+          enable: false
+          content: Professor Ndao switched from Boston University to UCSD
+        content: |
+          Periodically explaining applicable ML for optics
+
+          - PI: <a href="https://www.bu.edu/eng/profile/tianyu-wang-phd/" target="_blank" rel="noopener noreferrer">Tianyu Wang</a>
+
+      - job: "Software Test Engineering Co-op"
+        company: "Draper"
+        companyUrl: "https://www.draper.com/"
+        date: "Sep 2024 - Nov 2024"
+        info:
+          enable: false
+        content: "Validation Testing"
+
       - job: "Device Engineering Intern"
-        company: "alarm"
+        company: "Alarm"
         companyUrl: "https://alarm.com"
         date: "June 2024 - Aug 2024"
         info:
@@ -240,7 +269,7 @@ params:
       - title: "Bachelor of Science in Computer Science"
         school:
           name: "Boston University"
-          url: "https://example.org"
+          url: "https://bu.edu"
         date: "2022 - 2025"
         GPA: "3.6 out of 4.0"
         # content: |-
@@ -258,7 +287,7 @@ params:
       - title: "High School"
         school:
           name: "Mountain View High School"
-          url: "https://example.org"
+          url: "https://mvhs.mvla.net/"
         date: "2017 - 2021"
         # featuredLink:
         #   enable: true
@@ -278,7 +307,7 @@ params:
         content: Developed a product using Artificial Intelligence.
         image: /images/achievment.jpg
       - title: Hugo Profile
-        content: Developed a theme and getting 1K+ downloads per month.
+        content: Developed a   theme and getting 1K+ downloads per month.
         url: "https://github.com/gurusabarish/hugo-profile"
         image: /images/achievment.jpg
       - title: Microsoft Imagine Runner
@@ -292,6 +321,50 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - title: BUtLAR, A Voice-Powered Digital Human Assistant
+        content:
+         BUtLAR (Boston University LLM Auditory Responder) is a voice-powered digital human assistant that enhances 
+         personalized human-machine interaction through seamless speaker identification, noise immunity, and real-time, context-aware responses.
+         Designed for diverse applications, BUtLAR addresses the limitations of traditional chatbots by delivering 
+         dynamic, accessible, and conversational experiences across various environments.
+        image: /images/yobe.png
+        # featured:
+        #   name: Demo
+        #   link: https://hugo-profile.netlify.app
+        badges:
+          - "Yobe SDK"
+          - "Google Cloud"
+          - "LLMs/Transformers"
+        links:
+          # - icon: fa fa-envelope
+          #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/ASasamori/BUtLAR_Voice-Powered-Digital_Human_Assistant
+          - icon: fab fa-google-drive
+            url: https://docs.google.com/document/d/1nvjUT8SBX4aWWRxmYNE2X7lf09815ER7deOy5cTyFGs/edit?tab=t.0
+          # - icon: fab fa-twitter
+          #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: Asynch Batch Processing Solution for Cloud-LLMs
+        content: The vision of this project is to create an automated, scalable, and efficient asynchronous batch processing solution for cloud-based Large Language Models (LLMs) at Two Sigma, enabling effortless data backfilling for large-scale financial datasets. By removing the complexity of rate limits imposed by cloud LLM providers and minimizing the need for manual oversight, this solution will allow for processing large amounts of data in an optimized and timely manner, ultimately improving operational capabilities. Mentors are from Two Sigma. Stefan + Mayur
+        image: /images/LLM_batch.png
+        # featured:
+        #   name: Demo
+        #   link: https://hugo-profile.netlify.app
+        badges:
+          - "Docker"
+          - "LLMs"
+          - "Google Cloud"
+          - "Redis"
+          - "Flask"
+        links:
+          # - icon: fa fa-envelope
+          #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/ASasamori/PokerProPlus
+          # - icon: fab fa-twitter
+          #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+  
       - title: Poker Pro Plus
         content: Deep-Reinforcement Learning based poker AI created during my deep learning course, inspired by my short-lived losses of losing at 1/2 NLH.
         image: /images/Poker_Pro_Plus.png
@@ -338,6 +411,8 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/onkr0d/HackHarvard22-Repo
+  #TODO:
+  # Add sections that are dynamic that show top whatever for like Spotify, booklists, etc. Hopefully would call to the Spotify API and so forth
 
   #Contact
   contact:

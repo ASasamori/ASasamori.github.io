@@ -2,11 +2,11 @@
 <html>
 
 <head>
-	<meta name="generator" content="Hugo 0.133.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+	<meta name="generator" content="Hugo 0.134.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=/images/sabo_flag.png type="image/gif">
+<link rel="icon" href=/images/sunglasses.png type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,9 +27,6 @@
 
 <link rel="stylesheet" href="/css/font.css" media="all">
 
-
-
-  
 
 
 <meta property="og:url" content="http://localhost:1313/">
@@ -148,30 +145,6 @@ Andrew Sasamori
 
 
 
-<script>
-    var prevScrollPos = window.pageYOffset;
-    window.addEventListener("scroll", function showHeaderOnScroll() {
-        let profileHeaderElem = document.getElementById("profileHeader");
-        let currentScrollPos = window.pageYOffset;
-        let resetHeaderStyle = false;
-        let showNavBarOnScrollUp =  true ;
-        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
-        if (showNavBar) {
-            profileHeaderElem.classList.add("showHeaderOnTop");
-        } else {
-            resetHeaderStyle = true;
-        }
-        if(currentScrollPos === 0) {
-            resetHeaderStyle = true;
-        }
-        if(resetHeaderStyle) {
-            profileHeaderElem.classList.remove("showHeaderOnTop");
-        }
-        prevScrollPos = currentScrollPos;
-    });
-</script>
-
-
 
 <header id="profileHeader">
     <nav class="pt-3 navbar navbar-expand-lg animate">
@@ -179,19 +152,12 @@ Andrew Sasamori
             
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
-                <img src="/images/sabo_flag.png" width="30" height="30"
+                <img src="/images/sunglasses.png" width="30" height="30"
                     class="d-inline-block align-top">
-                My Personal Website
+                Andrew Sasamori
                 
             </a>
 
-            
-                <div>
-                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Ctrl &#43; k to Search...'
-                        aria-label="Search" oninput="searchOnChange(event)">
-                </div>
-                
-                
             
 
             
@@ -205,12 +171,6 @@ Andrew Sasamori
             
             <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
                 <ul class="navbar-nav ms-auto text-center">
-                    
-                        <li class="nav-item navbar-text d-block d-md-none">
-                            <div class="nav-link">
-                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Ctrl &#43; k to Search...' aria-label="Search" oninput="searchOnChange(event)">
-                            </div>
-                        </li>
                     
 
                     
@@ -295,7 +255,8 @@ Andrew Sasamori
     </nav>
 </header>
 <div id="content">
-<section id="hero" class="py-5 align-middle">
+
+    <section id="hero" class="py-5 align-middle" style="padding-bottom: 0;">
     <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-8 content animate" id="primary-font">
@@ -306,16 +267,19 @@ Andrew Sasamori
                     Andrew Sasamori
                 </h2>
                 <h3>
-                    Engineering Student
+                    Software Developer and Machine Learning Researcher
                 </h3>
                 <p class="hero-content">
-                    Please scroll down to read more about me :) These days, I am taking less classes and instead doing self-guided learning about statistical modeling, machine learning, firmware engineering, and full-stack technologies on my own.
+                    <p>Happy that you are here!</p>
+<p>Currently looking for Winter/Spring 2025 internships and/or New Grad roles for 2025</p>
+<p>&hellip; but also applying for a PhD at the same time.</p>
+
                 </p>
                 <div class="row">
                     <div class="col-auto h-100">
                         
-                        <a href="/andrew_sasamori_resume.pdf" class="btn" download
-			  >
+                        <a href="/Resume.pdf" class="btn" 
+                           target="_blank">
                             Resume
                         </a>
                         
@@ -348,11 +312,12 @@ Andrew Sasamori
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4">
                 <div class="row justify-content-center">
-                    <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
-                        <img src="/images/stairway.jpg"
-                            class="img-thumbnail mx-auto"
-                            alt=""
-                        >
+                    <div class="col-sm-12 col-md-12 pt-5 image {} px-5 px-md-5 px-lg-0 text-center">  
+                        <img src="/images/fun.jpeg"
+                        class="img-thumbnail ml-n299"
+                        alt=""
+                        style="width: 200%; max-width: 500px; margin-top: -50px;" 
+                   >
                     </div>
                 </div>
             </div>
@@ -636,12 +601,12 @@ Andrew Sasamori
             </div>
             
             <div class="col-sm-12 col-md-12 col-lg-8 content">
-                <p>Hi there! I am Andrew Sasamori, and I&rsquo;m originally from <a href="https://en.wikipedia.org/wiki/Mountain_View,_California" target="_blank" rel="noopener noreferrer">Mountain View</a> (Bay Area), California. As of Fall 2024, I am a 4th year Computer Engineering student concentrating in Machine Learning at Boston University, where I am a Undergraduate Research Assistant at the Tianyu Wang Research Lab.</p>
-<p>In May 2022, I transferred from University of Hawaii at Manoa to my current institution of Boston University. I have since ommitted this information from my resume because a surprising amount of employers had thought I graduated with a BS in Biological Engineering in 1 calendar year.</p>
+                <p>Hi there! I am Andrew Sasamori, and I&rsquo;m originally from <a href="https://en.wikipedia.org/wiki/Mountain_View,_California"  target="_blank" rel="noopener noreferrer">Mountain View</a> (Bay Area), California. For the 2024-2025 school year,  I am a 4th year <a href="https://www.bu.edu/academics/eng/programs/computer-engineering/bs/" target="_blank"  rel="noopener noreferrer">Computer Engineering</a> student concentrating in <a href="https://www.bu.edu/eng/academics/explore-degree-programs/concentration-in-machine-learning/"  target="_blank" rel="noopener noreferrer">Machine Learning</a> at <a href="https://www.bu.edu/"  target="_blank" rel="noopener noreferrer">Boston University</a>,  where I am a Undergraduate Research Assistant at the <a href="https://tyw-lab.github.io/"  target="_blank" rel="noopener noreferrer">Tianyu Wang Research Lab</a>.</p>
+<p>In May 2022, I transferred from <a href="https://manoa.hawaii.edu/"  target="_blank" rel="noopener noreferrer">University of Hawaii at Manoa</a> (as a <a href="https://cms.ctahr.hawaii.edu/majors/be"  target="_blank" rel="noopener noreferrer">Biological Engineering</a> student) to my current institution of Boston University.  I have since ommitted this information from my resume because a surprising amount of employers had thought I had completed the major within 1 school year.</p>
 
 
                 
-                Technologies I have actually been working with recently:
+                Recent technologies:
                 <ul>
                     
                     <li>Python</li>
@@ -672,11 +637,43 @@ Andrew Sasamori
                                 aria-selected="true" 
                                 role="tab" 
                                 data-bs-toggle="pill"
-                                id='alarm-June-2024---Aug-2024-tab'
-                                data-bs-target='#pills-alarm-June-2024---Aug-2024'
-                                aria-controls='alarm-June-2024---Aug-2024' 
+                                id='Tianyu-Wang-Lab-Jan-2024---Present-tab'
+                                data-bs-target='#pills-Tianyu-Wang-Lab-Jan-2024---Present'
+                                aria-controls='Tianyu-Wang-Lab-Jan-2024---Present' 
                             >
-                                alarm
+                                Tianyu Wang Lab
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Draper-Sep-2024---Nov-2024-tab'
+                                data-bs-target='#pills-Draper-Sep-2024---Nov-2024' 
+                                aria-controls='Draper-Sep-2024---Nov-2024'
+                            >
+                                Draper
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Alarm-June-2024---Aug-2024-tab'
+                                data-bs-target='#pills-Alarm-June-2024---Aug-2024' 
+                                aria-controls='Alarm-June-2024---Aug-2024'
+                            >
+                                Alarm
                             </div>
                         </li>
                         
@@ -752,22 +749,77 @@ Andrew Sasamori
                         <div 
                             class="tab-pane fade show active bg-transparent" 
                             role="tabpanel"
-                            id='pills-alarm-June-2024---Aug-2024'
-                            aria-labelledby='pills-alarm-June-2024---Aug-2024-tab'
+                            id='pills-Tianyu-Wang-Lab-Jan-2024---Present'
+                            aria-labelledby='pills-Tianyu-Wang-Lab-Jan-2024---Present-tab'
                         >
                             <div>
-                                <span class="h4">Device Engineering Intern</span>
+                                <span class="h4">Undergraduate Research Assistant</span>
                                 <small>-</small>
-                                <a href="https://alarm.com" target="_blank">alarm</a>
+                                <a href="https://tyw-lab.github.io/" target="_blank">Tianyu Wang Lab</a>
                                 <div class="pb-1">
-                                    <small>June 2024 - Aug 2024</small>
+                                    <small>Jan 2024 - Present</small>
                                     
                                 </div>
 
                                 
                             </div>
 
-                            Visualization for I/O and ports
+                            <p>Periodically explaining applicable ML for optics</p>
+<ul>
+<li>PI: <a href="https://www.bu.edu/eng/profile/tianyu-wang-phd/" target="_blank" rel="noopener noreferrer">Tianyu Wang</a></li>
+</ul>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Draper-Sep-2024---Nov-2024'
+                            aria-labelledby='pills-Draper-Sep-2024---Nov-2024-tab'
+                        >
+                            <div>
+                                <span class="h4">Software Test Engineering Co-op</span>
+                                <small>-</small>
+                                <a href="https://www.draper.com/" target="_blank">Draper</a>
+                                
+                                <div class="pb-1">
+                                    <small>Sep 2024 - Nov 2024</small>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                Validation Testing
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Alarm-June-2024---Aug-2024'
+                            aria-labelledby='pills-Alarm-June-2024---Aug-2024-tab'
+                        >
+                            <div>
+                                <span class="h4">Device Engineering Intern</span>
+                                <small>-</small>
+                                <a href="https://alarm.com" target="_blank">Alarm</a>
+                                
+                                <div class="pb-1">
+                                    <small>June 2024 - Aug 2024</small>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                Visualization for I/O and ports
+                            </div>
                         </div>
                         
                         
@@ -923,7 +975,7 @@ Andrew Sasamori
                                 <h5 class="card-title">Bachelor of Science in Computer Science</h5>
                                 
                                 
-                                <a href="https://example.org" target="_blank">
+                                <a href="https://bu.edu" target="_blank">
                                     <h6>
                                     Boston University
                                     </h6>
@@ -962,7 +1014,7 @@ Andrew Sasamori
                                 <h5 class="card-title">High School</h5>
                                 
                                 
-                                <a href="https://example.org" target="_blank">
+                                <a href="https://mvhs.mvla.net/" target="_blank">
                                     <h6>
                                     Mountain View High School
                                     </h6>
@@ -990,6 +1042,86 @@ Andrew Sasamori
     <div class="container">
         <h3 class="text-center">Projects</h3>
         <div class="row justify-content-center px-3 px-md-5">
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="BUtLAR, A Voice-Powered Digital Human Assistant">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/yobe.png" alt="BUtLAR, A Voice-Powered Digital Human Assistant">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Yobe SDK</span>
+                            
+                            <span class="badge badge-secondary">Google Cloud</span>
+                            
+                            <span class="badge badge-secondary">LLMs/Transformers</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">BUtLAR, A Voice-Powered Digital Human Assistant</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            BUtLAR (Boston University LLM Auditory Responder) is a voice-powered digital human assistant that enhances personalized human-machine interaction through seamless speaker identification, noise immunity, and real-time, context-aware responses. Designed for diverse applications, BUtLAR addresses the limitations of traditional chatbots by delivering dynamic, accessible, and conversational experiences across various environments.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/ASasamori/BUtLAR_Voice-Powered-Digital_Human_Assistant" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://docs.google.com/document/d/1nvjUT8SBX4aWWRxmYNE2X7lf09815ER7deOy5cTyFGs/edit?tab=t.0" target="_blank">
+                                <i class="fab fa-google-drive"></i>
+                            </a>
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Asynch Batch Processing Solution for Cloud-LLMs">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/LLM_batch.png" alt="Asynch Batch Processing Solution for Cloud-LLMs">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Docker</span>
+                            
+                            <span class="badge badge-secondary">LLMs</span>
+                            
+                            <span class="badge badge-secondary">Google Cloud</span>
+                            
+                            <span class="badge badge-secondary">Redis</span>
+                            
+                            <span class="badge badge-secondary">Flask</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Asynch Batch Processing Solution for Cloud-LLMs</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            The vision of this project is to create an automated, scalable, and efficient asynchronous batch processing solution for cloud-based Large Language Models (LLMs) at Two Sigma, enabling effortless data backfilling for large-scale financial datasets. By removing the complexity of rate limits imposed by cloud LLM providers and minimizing the need for manual oversight, this solution will allow for processing large amounts of data in an optimized and timely manner, ultimately improving operational capabilities. Mentors are from Two Sigma. Stefan &#43; Mayur
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/ASasamori/PokerProPlus" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
             
             <div class="col-lg-4 col-md-6 my-3">
                 <div class="card my-3 h-100" title="Poker Pro Plus">
@@ -1202,18 +1334,13 @@ Andrew Sasamori
             
                 <div class="pb-2">
                     <a href="http://localhost:1313/" title="Andrew Sasamori">
-                        <img alt="Footer logo" src="/images/sabo_flag.png"
+                        <img alt="Footer logo" src="/images/sunglasses.png"
                             height="40px" width="40px">
                     </a>
                 </div>
             
-            &copy; 2024  Version 1.1
             <div class="text-secondary">
-                Copied from
-                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
-                    title="Designed and developed by gurusabarish">
-                    Example Portfolio
-                </a>
+                Andrew Sasamori
             </div>
         </div>
     </div>
@@ -1247,8 +1374,6 @@ Andrew Sasamori
 
 </script>
 
-
-    <script src="/js/search.js"></script>
 
 
 

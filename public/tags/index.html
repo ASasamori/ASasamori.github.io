@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=/images/sabo_flag.png type="image/gif">
+<link rel="icon" href=/images/sunglasses.png type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,9 +26,6 @@
 
 <link rel="stylesheet" href="/css/font.css" media="all">
 
-
-
-  
 
 
 <meta property="og:url" content="http://localhost:1313/tags/">
@@ -143,30 +140,6 @@ Tags | Andrew Sasamori
 
 
 
-<script>
-    var prevScrollPos = window.pageYOffset;
-    window.addEventListener("scroll", function showHeaderOnScroll() {
-        let profileHeaderElem = document.getElementById("profileHeader");
-        let currentScrollPos = window.pageYOffset;
-        let resetHeaderStyle = false;
-        let showNavBarOnScrollUp =  true ;
-        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
-        if (showNavBar) {
-            profileHeaderElem.classList.add("showHeaderOnTop");
-        } else {
-            resetHeaderStyle = true;
-        }
-        if(currentScrollPos === 0) {
-            resetHeaderStyle = true;
-        }
-        if(resetHeaderStyle) {
-            profileHeaderElem.classList.remove("showHeaderOnTop");
-        }
-        prevScrollPos = currentScrollPos;
-    });
-</script>
-
-
 
 <header id="profileHeader">
     <nav class="pt-3 navbar navbar-expand-lg animate">
@@ -174,19 +147,12 @@ Tags | Andrew Sasamori
             
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
-                <img src="/images/sabo_flag.png" width="30" height="30"
+                <img src="/images/sunglasses.png" width="30" height="30"
                     class="d-inline-block align-top">
-                My Personal Website
+                Andrew Sasamori
                 
             </a>
 
-            
-                <div>
-                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Ctrl &#43; k to Search...'
-                        aria-label="Search" oninput="searchOnChange(event)">
-                </div>
-                
-                
             
 
             
@@ -200,12 +166,6 @@ Tags | Andrew Sasamori
             
             <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
                 <ul class="navbar-nav ms-auto text-center">
-                    
-                        <li class="nav-item navbar-text d-block d-md-none">
-                            <div class="nav-link">
-                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Ctrl &#43; k to Search...' aria-label="Search" oninput="searchOnChange(event)">
-                            </div>
-                        </li>
                     
 
                     
@@ -294,6 +254,66 @@ Tags | Andrew Sasamori
     <h2 class="text-center pb-2">Tags</h2>
     <div class="row">
         
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="/tags/emoji-support/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Emoji Support">Emoji Support</h5>
+                        </a>
+                        <div class="card-text secondary-font">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">Apr 3, 2021</span>
+                        <a href="/tags/emoji-support/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="/tags/example/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Example">Example</h5>
+                        </a>
+                        <div class="card-text secondary-font">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">Apr 3, 2021</span>
+                        <a href="/tags/example/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="/tags/sample/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Sample">Sample</h5>
+                        </a>
+                        <div class="card-text secondary-font">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">Apr 3, 2021</span>
+                        <a href="/tags/sample/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div class="row justify-content-center">
             <div class="col-auto m-3">
                 
@@ -359,18 +379,13 @@ Tags | Andrew Sasamori
             
                 <div class="pb-2">
                     <a href="http://localhost:1313/" title="Andrew Sasamori">
-                        <img alt="Footer logo" src="/images/sabo_flag.png"
+                        <img alt="Footer logo" src="/images/sunglasses.png"
                             height="40px" width="40px">
                     </a>
                 </div>
             
-            &copy; 2024  Version 1.1
             <div class="text-secondary">
-                Copied from
-                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
-                    title="Designed and developed by gurusabarish">
-                    Example Portfolio
-                </a>
+                Andrew Sasamori
             </div>
         </div>
     </div>
@@ -404,8 +419,6 @@ Tags | Andrew Sasamori
 
 </script>
 
-
-    <script src="/js/search.js"></script>
 
 
 
