@@ -266,7 +266,7 @@ params:
           name: "Boston University"
           url: "https://bu.edu"
         date: "2022 - 2025"
-        GPA: "3.6 out of 4.0"
+        GPA: "3.7 out of 4.0"
         # content: |-
         #   I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
         #   - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
