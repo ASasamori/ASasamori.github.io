@@ -261,7 +261,7 @@ params:
     # title: "Custom Name"
     index: false
     items:
-      - title: "Bachelor of Science in Computer Science"
+      - title: "Bachelor of Science in Computer Engineering"
         school:
           name: "Boston University"
           url: "https://bu.edu"
