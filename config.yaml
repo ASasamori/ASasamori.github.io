@@ -128,7 +128,8 @@ params:
     title: "Andrew Sasamori"
     subtitle: "Software Developer and Machine Learning Researcher"
     content: >- 
-      Happy that you are here!
+      I am currently rebuilding this site to have more personality and represent my more creative nature.
+      Thinking of reformatting the website to use a more blog-style essense. Stay tuned!
       
 
     image: "/images/fun.jpeg"
@@ -356,7 +357,7 @@ params:
           # - icon: fa fa-envelope
           #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
           - icon: fab fa-github
-            url: https://github.com/ASasamori/PokerProPlus
+            url: https://github.com/EC528-Fall-2024/async-batch-cloud-llms
           # - icon: fab fa-twitter
           #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
   
